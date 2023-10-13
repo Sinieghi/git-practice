@@ -16,7 +16,7 @@ const PremiumPlan = () => {
   if (!userData) {
     return <CheckForSignatureBeforeUpdate />;
   }
-  //estou aprendendo git
+  //estou aprendendo git, hello me
   return (
     <Wrapper className={`plan ${subscriptionStuff[2].descriptionClass}`}>
       <div
