@@ -1,0 +1,45 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "dev": "nodemon app.js",
+    "build": "npm i && npm start"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^5.3.0",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.3",
+    "stripe": "^12.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0",
+    "nodemon": "^2.0.9"
+  },
+  "private": true
+}

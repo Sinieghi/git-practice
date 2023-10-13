@@ -1,0 +1,12 @@
+{
+  "name": "onfrete-production",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "set-prod":"cd public && npm i && npm run build && cd.. && cd functions && npm i && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

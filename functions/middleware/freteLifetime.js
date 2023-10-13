@@ -1,0 +1,1 @@
+const setToconcludedAndTimerForDel = (frete) => {};
