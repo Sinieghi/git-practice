@@ -50,11 +50,12 @@ app.use("/api/v1/support", supportRouter);
 app.use("/api/v1/message", messageRouter);
 app.use("/api/v1/admin", adminRouter);
 app.use("/api/v1", stripeController);
-
+//rollback with checkout
 app.use(express.static(path.resolve(__dirname, "./app/dist")));
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../public", "index.html"));
 });
+//praticando git reset e tals
 
 app.use(notFound);
 app.use(errorHandlerMiddleware);
