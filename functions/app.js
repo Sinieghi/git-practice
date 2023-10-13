@@ -57,7 +57,7 @@ app.get("*", (req, res) => {
 });
 //praticando git reset e tals
 // add new things
-
+// merge me sempai
 app.use(notFound);
 app.use(errorHandlerMiddleware);
 export const frApp = onRequest(app);
