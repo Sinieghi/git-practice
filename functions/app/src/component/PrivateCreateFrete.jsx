@@ -5,7 +5,6 @@ import { styled } from "styled-components";
 import { getUser } from "../feature/userFromDataSlice/userDataSlice";
 
 const PrivateCreateFrete = ({ children }) => {
-  //arrumar o getUser do userDate e substituir esse user pelo user que vem do server user
   const { userData } = useSelector((store) => store.userData);
   const dispatch = useDispatch();
   useEffect(() => {
