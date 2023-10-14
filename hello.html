@@ -154,3 +154,26 @@ vamos dar merge no ambiente de prod
         git archive --format zip -output folder_name <branch>
             <!--Serve para criar um zip do workspace, bom para carregar em pendrive-->
     </archive>
+
+    <optimize-commits>
+        a ideia é a seguinte, para não poluir os log com commit desnecessário a ideia é criar uma branch da branch ex:
+        git checkout -b subscription >> git checkout -b private_subscription
+        dai voce vai estar na branch "terciária" digamos assim, voce pode fazer quantos commit's quiser que essa
+        branch
+        não é para ser supervisionada mesmo, pois o problema de poluir o log com commit é algo sério em um ambiente em
+        grupo
+
+        E depois de finalizar os serviços na branch terciária partimos para a branch secundaria
+        git checkout subscription
+        dai rodamos o código para pegar commits específicos
+        git rebase subscription private_subscription -i
+        e quando roda esse comando voce tem de escolher o quais commits vai trazer usando o prick
+        ex:
+        pick 13d2d9e parando para o almoço
+        squash 67ff90c fiz a du
+        squash c982a15 terminei a du
+        pick 0484ceb task concluído, enviando para o commit final
+
+        só o commit com "pick" vai ser puxado para a branch secundaria
+        e o reword vc renomeia o commit
+    </optimize-commits>
