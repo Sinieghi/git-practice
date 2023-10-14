@@ -22,6 +22,9 @@ body {
 
 }
 
+.add-bit-more-before-deploy {
+  color: var(--grey-300);
+}
 
 /*   font-family: 'Rosaline',
   cursive; */
