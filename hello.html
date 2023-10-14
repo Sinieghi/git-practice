@@ -133,3 +133,10 @@ vamos dar merge no ambiente de prod
     <fsck>
         git fsck <!--git da um check nos files para ver se tem algo de errado-->
     </fsck>
+    <reflog>
+        git reflog <!--aponta qualquer alteração de comando no git-->
+    </reflog>
+    <reset --hard HEAD@{num}>
+        git reflog
+        git reset --hard HEAD@{num da head que o reflog da} <!--navega nas alterações que o reflog detecta-->
+    </reset>
