@@ -38,7 +38,30 @@
         na linha abaixo vai ter coisas novas
 
         vou testar para ver se as infos se sobrescreve no merge
+
+        Bom, branch tem mais ainda...
+        ex: Imagina o cenário onde eu inicio um workspace novo, dai preciso dar um pull na url, dei esse pull linkei com
+        a url git remote add origin url e o que acontece? Vou estar em uma branch zerada, normalmente a master, dai eu
+        eo posso dar o push nesse novo workspace para o repo que dei pull só que ao fazer isso a branch desse novo
+        workspace vai estar como master, e o push vai inserir esse conteúdo como master.
+        depois disso eu posso pegar as branch que esta armazenada no repo com o git fetch -a, e com isso tenho acesso a
+        todas as branch nesse workspace novo, como por exemplo a main
     </branch>
+
+    <fetch>
+        Suponhamos que iniciei um workflow novo, dai dei pull em um repo existente, nesse novo workspace preciso ter
+        acesso as branch originais do repo
+        dai então uso o git fetch -a e pego todas as branch.
+        mas o processo de iniciar um work flow normalmente é assim
+        git pull url branch
+        git remote add origin url
+        git fetch -a
+        git add .
+        git commit -a -m ''
+        git push
+        dai voce cria a branch master nesse caso...
+        mas da para trocar de branch antes, ja que deu o fetch
+    </fetch>
 
     <stash>
         git stash armazena o codigo em cache que ainda não foi commitado, então da para da um "roll back" para uma
