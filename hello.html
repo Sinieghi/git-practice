@@ -149,3 +149,8 @@ vamos dar merge no ambiente de prod
         opt = [branch, tag]
         git push --delete origin [opt]
     </delete>
+
+    <archive>
+        git archive --format zip -output folder_name <branch>
+            <!--Serve para criar um zip do workspace, bom para carregar em pendrive-->
+    </archive>
