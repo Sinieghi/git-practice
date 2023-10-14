@@ -56,8 +56,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../public", "index.html"));
 });
 //praticando git reset e tals
-// add new things
-// merge me sempai
+//alow new branch
 app.use(notFound);
 app.use(errorHandlerMiddleware);
 export const frApp = onRequest(app);
